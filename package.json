@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "fecha": "^4.2.3",
+    "modern-normalize": "^1.1.0",
+    "preact": "^10.11.3"
+  },
+  "devDependencies": {
+    "@bauke/eslint-config": "^0.1.2",
+    "@bauke/prettier-config": "^0.1.2",
+    "@bauke/stylelint-config": "^0.1.2",
+    "@types/node": "^18.11.15",
+    "sass": "^1.56.2",
+    "stylelint": "^14.16.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3",
+    "xo": "^0.53.1"
+  },
+  "prettier": "@bauke/prettier-config",
+  "stylelint": {
+    "extends": "@bauke/stylelint-config"
+  },
+  "xo": {
+    "extends": "@bauke/eslint-config",
+    "prettier": true,
+    "space": true
+  }
+}

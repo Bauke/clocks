@@ -1,0 +1,13 @@
+.digital-clock {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .time {
+    background-color: var(--background-dark-transparency);
+    border: 2px dashed var(--foreground);
+    font-family: monospace;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,58 @@
+@use "reset";
+@use "digital";
+
+body {
+  --anchor: #a1a8ef;
+  --background: #1a1a1a;
+  --background-dark-transparency: #0004;
+  --foreground: #e1e1e1;
+
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--anchor);
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+
+  &.main {
+    h1 {
+      background-color: var(--background-dark-transparency);
+      padding: 64px;
+    }
+
+    a {
+      border-bottom: 2px dotted;
+      padding: 8px;
+
+      &:hover {
+        background-color: var(--background-dark-transparency);
+      }
+    }
+
+    .links {
+      padding: 64px;
+    }
+  }
+}
+
+.back-to-top {
+  bottom: 20px;
+  background-color: var(--background-dark-transparency);
+  color: var(--foreground);
+  left: 20px;
+  padding: 4px;
+  position: fixed;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--anchor);
+    color: var(--background);
+  }
+}
